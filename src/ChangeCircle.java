@@ -24,8 +24,8 @@ public class ChangeCircle extends Application {
         circle.setStroke(Color.GRAY);
 
         // set circle properties on mouse press and release
-        circle.setOnMousePressed(e -> circle.setFill(Color.BLACK));
-        circle.setOnMouseReleased(e -> circle.setFill(Color.WHITE));
+        pane.setOnMousePressed(e -> circle.setFill(Color.BLACK));
+        pane.setOnMouseReleased(e -> circle.setFill(Color.WHITE));
 
         // add circle to pane
         pane.getChildren().add(circle);
